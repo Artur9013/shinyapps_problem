@@ -1,7 +1,7 @@
 # # Bootstrapping renv 0.12.5 --------------------------------------------------
 # * Downloading renv 0.12.5 from CRAN ... OK
 # * Installing renv 0.12.5 ... Done!
-#   * Successfully installed and loaded renv 0.12.5.
+# * Successfully installed and loaded renv 0.12.5.
 # * Project '~/Documents/Projects/shinyapps_problem' loaded. [renv 0.12.5]
 install.packages('devtools')
 devtools::install_github("richarddmorey/shinyapps_problem")
