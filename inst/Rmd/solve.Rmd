@@ -1,0 +1,25 @@
+---
+title: "Check your assignments"
+output: 
+  flexdashboard::flex_dashboard:
+    theme: yeti
+runtime: shiny_prerendered
+---
+
+```{r context='setup'}
+library(flexdashboard)
+library(flexTeaching)
+
+all_assignment_data =  flexTeaching:::getAssignments(simple = FALSE)
+
+```
+
+```{r context='render'}
+verbatimTextOutput("text")
+```
+
+```{r context='server'}
+output$text <- renderPrint({
+  print(all_assignment_data)
+})
+```
