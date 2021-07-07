@@ -3,14 +3,10 @@
 # * Installing renv 0.12.5 ... Done!
 # * Successfully installed and loaded renv 0.12.5.
 # * Project '~/Documents/Projects/shinyapps_problem' loaded. [renv 0.12.5]
-install.packages('devtools')
 devtools::install_github("richarddmorey/shinyapps_problem")
 
-# Needed for Rmd
-install.packages('flexdashboard')
-
-# Needed to deploy
-install.packages(c('packrat','rsconnect'))
+## Test the function; should just output a sorted tibble
+flexTeaching::getAssignments()
 
 sessioninfo::session_info()
 # ─ Session info ──────────────────────────────────────────────────────────────────────────────────
