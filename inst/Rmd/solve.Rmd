@@ -10,7 +10,7 @@ runtime: shiny_prerendered
 library(flexdashboard)
 library(flexTeaching)
 
-all_assignment_data =  flexTeaching:::getAssignments(simple = FALSE)
+all_assignment_data =  flexTeaching::getAssignments(simple = FALSE)
 
 ```
 
