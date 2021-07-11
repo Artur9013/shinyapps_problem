@@ -4,3 +4,5 @@
 .Ruserdata
 *.dcf
 inst/Rmd/solve.html
+renv/*
+
