@@ -3,4 +3,4 @@
 .RData
 .Ruserdata
 *.dcf
-inst/Rmd/solve.html
+*.html

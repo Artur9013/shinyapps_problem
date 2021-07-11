@@ -1,38 +1,8 @@
-# # Bootstrapping renv 0.13.2 --------------------------------------------------
-# * Downloading renv 0.13.2 ... OK (downloaded binary)
-# * Installing renv 0.13.2 ... Done!
-# * Successfully installed and loaded renv 0.13.2.
-# * Project '~/Downloads/shinyapps_problem-master' loaded. [renv 0.13.2]
-# * The project library is out of sync with the lockfile.
-# * Use `renv::restore()` to install packages recorded in the lockfile.
 renv::restore(prompt = FALSE)
 
-devtools::install_github("richarddmorey/shinyapps_problem")
-# Using github PAT from envvar GITHUB_PAT
-# Downloading GitHub repo richarddmorey/shinyapps_problem@HEAD
-# ✓  checking for file ‘/private/var/folders/yn/wzkl_t8567l9pvwhp0wsm40w0000gn/T/RtmpaEpCNn/remotes645e27bb7982/richarddmorey-shinyapps_problem-bd57831/DESCRIPTION’ ...
-# ─  preparing ‘flexTeaching’:
-# ✓  checking DESCRIPTION meta-information ...
-# ─  checking for LF line-endings in source and make files and shell scripts
-# ─  checking for empty or unneeded directories
-# ─  building ‘flexTeaching_0.1.tar.gz’
-# 
-# Installing package into ‘/Users/richard/Downloads/shinyapps_problem-master/renv/library/R-4.1/x86_64-apple-darwin17.0’
-# (as ‘lib’ is unspecified)
-# * installing *source* package ‘flexTeaching’ ...
-# ** using non-staged installation via StagedInstall field
-# ** R
-# ** inst
-# ** byte-compile and prepare package for lazy loading
-# ** help
-# No man pages found in package  ‘flexTeaching’ 
-# *** installing help indices
-# ** building package indices
-# ** testing if installed package can be loaded
-# * DONE (flexTeaching)
+devtools::install_github("richarddmorey/shinyapps_problem", ref = "renv_test", subdir = "pkg1")
 
-# Test the single function in the package
-# should just output a sorted tibble
+# Test installation; should output sorted cars data frame
 flexTeaching::getAssignments()
 
 sessioninfo::session_info()
