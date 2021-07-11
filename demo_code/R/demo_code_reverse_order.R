@@ -9,12 +9,13 @@ writeLines(
   con = here::here('demo_code/session_info_renv.txt')
 )
 
-## Install package; has renv in the root
+## Install second, identical package that does not have renv in the package folder
 devtools::install_github("richarddmorey/shinyapps_problem",
                          ref = "test3",
                          dependencies = TRUE)
 
-## Install second, identical package that does not have renv in the package folder
+## This version deploys. The only difference between the two branches
+## is the renv files
 rsconnect::deployApp(
   appDir = here::here('demo_code/Rmd/'),
   appFiles = 'solve.Rmd',
@@ -33,13 +34,12 @@ unlink(here::here('demo_code/Rmd/rsconnect'), recursive = TRUE, force = TRUE)
 unloadNamespace('flexTeaching')
 remove.packages('flexTeaching')
 
-## Attempt to deploy. Fails to load dependencies for flexTeaching
+# Install version of package with renv in the root
 devtools::install_github("richarddmorey/shinyapps_problem",
                          ref = "master",
                          dependencies = TRUE)
 
-## This version deploys. The only difference between the two branches
-## is the renv files
+## Attempt to deploy. Fails to load dependencies for flexTeaching
 rsconnect::deployApp(
   appDir = here::here('demo_code/Rmd/'),
   appFiles = 'solve.Rmd',
