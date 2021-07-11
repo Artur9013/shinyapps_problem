@@ -1,0 +1,156 @@
+----- Deployment log started at  2021-07-11 22:45:25  -----
+Deploy command: 
+ rsconnect::deployApp(appDir = here::here("demo_code/Rmd/"), appFiles = "solve.Rmd",      appPrimaryDoc = "solve.Rmd", appName = "solve_test", account = shinyapps_username,      logLevel = "verbose") 
+
+Session information: 
+R version 4.1.0 (2021-05-18)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 10 x64 (build 19041)
+
+Matrix products: default
+
+locale:
+[1] LC_COLLATE=English_United States.1252  LC_CTYPE=English_United States.1252    LC_MONETARY=English_United States.1252 LC_NUMERIC=C                          
+[5] LC_TIME=English_United States.1252    
+
+attached base packages:
+[1] stats     graphics  grDevices datasets  utils     methods   base     
+
+other attached packages:
+[1] flexdashboard_0.5.2 shiny_1.6.0        
+
+loaded via a namespace (and not attached):
+ [1] tidyselect_1.1.1  xfun_0.24         bslib_0.2.5.1     remotes_2.4.0     purrr_0.3.4       generics_0.1.0    vctrs_0.3.8       testthat_3.0.4   
+ [9] usethis_2.0.1     htmltools_0.5.1.1 yaml_2.2.1        utf8_1.2.1        rlang_0.4.11      pkgbuild_1.2.0    pillar_1.6.1      later_1.2.0      
+[17] jquerylib_0.1.4   glue_1.4.2        withr_2.4.2       sessioninfo_1.1.1 lifecycle_1.0.0   stringr_1.4.0     devtools_2.4.2    memoise_2.0.0    
+[25] evaluate_0.14     knitr_1.33        callr_3.7.0       fastmap_1.1.0     httpuv_1.6.1      ps_1.6.0          curl_4.3.2        fansi_0.5.0      
+[33] Rcpp_1.0.7        xtable_1.8-4      openssl_1.4.4     renv_0.13.2       promises_1.2.0.1  cachem_1.0.5      desc_1.3.0        pkgload_1.2.1    
+[41] jsonlite_1.7.2    mime_0.11         fs_1.5.0          askpass_1.1       packrat_0.6.0     digest_0.6.27     stringi_1.6.2     dplyr_1.0.7      
+[49] processx_3.5.2    rprojroot_2.0.2   here_1.0.1        cli_3.0.0         tools_4.1.0       magrittr_2.0.1    sass_0.4.0        tibble_3.1.2     
+[57] pkgconfig_2.0.3   crayon_1.4.1      ellipsis_0.3.2    rsconnect_0.8.18  prettyunits_1.1.1 rmarkdown_2.9     rstudioapi_0.13   R6_2.5.0         
+[65] compiler_4.1.0   
+Cookies: 
+[1] path    name    value   secure  expires
+<0 rows> (or 0-length row.names)
+GET /v1/applications/?filter=account_id:26575&filter=name:solve_test&count=100&offset=0 399ms
+POST /v1/applications/ 729ms
+----- Bundle upload started at  2021-07-11 22:45:26  -----
+[2021-07-11 22:45:26] Inferring App mode and parameters 
+[2021-07-11 22:45:26] Bundling app dir 
+[2021-07-11 22:45:26] Generate manifest.json 
+[2021-07-11 22:45:26] Starting to perform packrat snapshot 
+
+Adding these packages to packrat:
+                  _        
+    R6              2.5.0  
+    Rcpp            1.0.7  
+    base64enc       0.1-3  
+    bslib           0.2.5.1
+    cachem          1.0.5  
+    cli             3.0.0  
+    commonmark      1.7    
+    crayon          1.4.1  
+    digest          0.6.27 
+    dplyr           1.0.7  
+    ellipsis        0.3.2  
+    evaluate        0.14   
+    fansi           0.5.0  
+    fastmap         1.1.0  
+    flexTeaching    0.1    
+    flexdashboard   0.5.2  
+    fs              1.5.0  
+    generics        0.1.0  
+    glue            1.4.2  
+    highr           0.9    
+    htmltools       0.5.1.1
+    htmlwidgets     1.5.3  
+    httpuv          1.6.1  
+    jquerylib       0.1.4  
+    jsonlite        1.7.2  
+    knitr           1.33   
+    later           1.2.0  
+    lifecycle       1.0.0  
+    magrittr        2.0.1  
+    markdown        1.1    
+    mime            0.11   
+    pillar          1.6.1  
+    pkgconfig       2.0.3  
+    promises        1.2.0.1
+    purrr           0.3.4  
+    rappdirs        0.3.3  
+    rlang           0.4.11 
+    rmarkdown       2.9    
+    sass            0.4.0  
+    shiny           1.6.0  
+    sourcetools     0.1.7  
+    stringi         1.6.2  
+    stringr         1.4.0  
+    tibble          3.1.2  
+    tidyselect      1.1.1  
+    tinytex         0.32   
+    utf8            1.2.1  
+    vctrs           0.3.8  
+    withr           2.4.2  
+    xfun            0.24   
+    xtable          1.8-4  
+    yaml            2.2.1  
+
+[2021-07-11 22:45:27] Completed performing packrat snapshot 
+[2021-07-11 22:45:28] Writing Rmd index if necessary 
+[2021-07-11 22:45:28] Compressing the bundle 
+POST /v1/bundles 420ms
+[2021-07-11 22:45:28] Starting upload now 
+PUT /bundles/application-4374949/828e8d628ea74a3f84090ededebfa25a.tar.gz?AWSAccessKeyId=ASIA54P7SCTK3FRMQZ55&x-amz-acl=bucket-owner-full-control&Expires=1626043529&content-md5=5YdlrRPItEkTFCXTFSiXLw%3D%3D&x-amz-security-token=FwoGZXIvYXdzEO%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGqsq2Le1sFFQAC%2BlSKtATs07jEhau5TLhCHI0Ywlbv%2Bx3mg0Qmkg0SHHgwJzfgj7nCdJlhiJXIDZkmb3mOFUPj3ZbsyoM4MvwXXLzad6Fmv4uuMLl%2F%2F6dCf7SGzSnOfcLhk515HWqtVrgJ5tWBqwXx2Q2Y4aYlOju8MmI%2FXMgjJ2jeAO4t4D0KYjCTeWSk8srFE5I7qD9dZe7N3W8XuWqG3I4lbIluL062DaiTsXXVQ38Q8Lpvcd4eEOgMrKMnKrYcGMi0PZO9Y29eKRxZsjZYYw5Jodc8f71VOuMFEGdxMKyZo0eN5wPGr%2Fnh0WEt3fbo%3D&Signature=19wOqrbtkvnEdpKMkEQtLadMc7k%3D&content-type=application%2Fx-tar 500ms
+[2021-07-11 22:45:29] Upload complete 
+POST /v1/bundles/4809116/status 440ms
+GET /v1/bundles/4809116 500ms
+[2021-07-11 22:45:30] Saving deployment record for solve_test -  
+----- Server deployment started at  2021-07-11 22:45:30  -----
+POST /v1/applications/4374949/deploy 770ms
+Waiting for task: 969703008
+GET /v1/tasks/969703008 380ms
+GET /v1/tasks/969703008 369ms
+  building: Processing bundle: 4809116
+GET /v1/tasks/969703008 379ms
+  building: Building image: 5515193
+GET /v1/tasks/969703008 419ms
+  building: Fetching packages
+GET /v1/tasks/969703008 389ms
+  building: Installing packages
+GET /v1/tasks/969703008 380ms
+GET /v1/tasks/969703008 360ms
+GET /v1/tasks/969703008 419ms
+GET /v1/tasks/969703008 389ms
+GET /v1/tasks/969703008 410ms
+GET /v1/tasks/969703008 360ms
+GET /v1/tasks/969703008 360ms
+GET /v1/tasks/969703008 369ms
+GET /v1/tasks/969703008 379ms
+GET /v1/tasks/969703008 360ms
+  building: Installing files
+GET /v1/tasks/969703008 360ms
+GET /v1/tasks/969703008 399ms
+GET /v1/tasks/969703008 459ms
+  building: Pushing image: 5515193
+GET /v1/tasks/969703008 750ms
+GET /v1/tasks/969703008 559ms
+GET /v1/tasks/969703008 400ms
+GET /v1/tasks/969703008 419ms
+GET /v1/tasks/969703008 370ms
+GET /v1/tasks/969703008 360ms
+GET /v1/tasks/969703008 580ms
+GET /v1/tasks/969703008 389ms
+GET /v1/tasks/969703008 389ms
+GET /v1/tasks/969703008 440ms
+  deploying: Starting instances
+GET /v1/tasks/969703008 650ms
+GET /v1/tasks/969703008 379ms
+GET /v1/tasks/969703008 800ms
+GET /v1/tasks/969703008 1399ms
+  rollforward: Activating new instances
+GET /v1/tasks/969703008 389ms
+GET /v1/tasks/969703008 479ms
+GET /v1/tasks/969703008 439ms
+  unstaging: Stopping old instances
+GET /v1/tasks/969703008 370ms
+----- Deployment log finished at  2021-07-11 22:46:23  -----

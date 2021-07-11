@@ -1,0 +1,332 @@
+----- Deployment log started at  2021-07-11 22:43:28  -----
+Deploy command: 
+ rsconnect::deployApp(appDir = here::here("demo_code/Rmd/"), appFiles = "solve.Rmd",      appPrimaryDoc = "solve.Rmd", appName = "solve_test", account = shinyapps_username,      logLevel = "verbose") 
+
+Session information: 
+R version 4.1.0 (2021-05-18)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 10 x64 (build 19041)
+
+Matrix products: default
+
+locale:
+[1] LC_COLLATE=English_United States.1252  LC_CTYPE=English_United States.1252    LC_MONETARY=English_United States.1252 LC_NUMERIC=C                          
+[5] LC_TIME=English_United States.1252    
+
+attached base packages:
+[1] stats     graphics  grDevices datasets  utils     methods   base     
+
+loaded via a namespace (and not attached):
+ [1] rstudioapi_0.13   magrittr_2.0.1    usethis_2.0.1     devtools_2.4.2    pkgload_1.2.1     here_1.0.1        R6_2.5.0          rlang_0.4.11     
+ [9] fastmap_1.1.0     tools_4.1.0       pkgbuild_1.2.0    sessioninfo_1.1.1 cli_3.0.0         withr_2.4.2       ellipsis_0.3.2    remotes_2.4.0    
+[17] rprojroot_2.0.2   lifecycle_1.0.0   crayon_1.4.1      processx_3.5.2    purrr_0.3.4       callr_3.7.0       fs_1.5.0          ps_1.6.0         
+[25] curl_4.3.2        rsconnect_0.8.18  testthat_3.0.4    memoise_2.0.0     glue_1.4.2        cachem_1.0.5      compiler_4.1.0    desc_1.3.0       
+[33] prettyunits_1.1.1 renv_0.13.2      
+Cookies: 
+[1] "None"
+GET /v1/applications/?filter=account_id:26575&filter=name:solve_test&count=100&offset=0 470ms
+POST /v1/applications/ 610ms
+----- Bundle upload started at  2021-07-11 22:43:29  -----
+[2021-07-11 22:43:29] Inferring App mode and parameters 
+[2021-07-11 22:43:29] Bundling app dir 
+[2021-07-11 22:43:29] Generate manifest.json 
+[2021-07-11 22:43:29] Starting to perform packrat snapshot 
+
+Adding these packages to packrat:
+                  _        
+    R6              2.5.0  
+    Rcpp            1.0.7  
+    base64enc       0.1-3  
+    bslib           0.2.5.1
+    cachem          1.0.5  
+    cli             3.0.0  
+    commonmark      1.7    
+    crayon          1.4.1  
+    digest          0.6.27 
+    dplyr           1.0.7  
+    ellipsis        0.3.2  
+    evaluate        0.14   
+    fansi           0.5.0  
+    fastmap         1.1.0  
+    flexTeaching    0.1    
+    flexdashboard   0.5.2  
+    fs              1.5.0  
+    generics        0.1.0  
+    glue            1.4.2  
+    highr           0.9    
+    htmltools       0.5.1.1
+    htmlwidgets     1.5.3  
+    httpuv          1.6.1  
+    jquerylib       0.1.4  
+    jsonlite        1.7.2  
+    knitr           1.33   
+    later           1.2.0  
+    lifecycle       1.0.0  
+    magrittr        2.0.1  
+    markdown        1.1    
+    mime            0.11   
+    pillar          1.6.1  
+    pkgconfig       2.0.3  
+    promises        1.2.0.1
+    purrr           0.3.4  
+    rappdirs        0.3.3  
+    rlang           0.4.11 
+    rmarkdown       2.9    
+    sass            0.4.0  
+    shiny           1.6.0  
+    sourcetools     0.1.7  
+    stringi         1.6.2  
+    stringr         1.4.0  
+    tibble          3.1.2  
+    tidyselect      1.1.1  
+    tinytex         0.32   
+    utf8            1.2.1  
+    vctrs           0.3.8  
+    withr           2.4.2  
+    xfun            0.24   
+    xtable          1.8-4  
+    yaml            2.2.1  
+
+[2021-07-11 22:43:32] Completed performing packrat snapshot 
+[2021-07-11 22:43:33] Writing Rmd index if necessary 
+[2021-07-11 22:43:33] Compressing the bundle 
+POST /v1/bundles 399ms
+[2021-07-11 22:43:33] Starting upload now 
+PUT /bundles/application-4374945/917d8f99e22e43c7ae65ffaafd81a81d.tar.gz?AWSAccessKeyId=ASIA54P7SCTK2Q4VNAFW&x-amz-acl=bucket-owner-full-control&Expires=1626043414&content-md5=b6rAmMQi8aLInRNfyJQGqA%3D%3D&x-amz-security-token=FwoGZXIvYXdzEO%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDHTyUkRHysTAZdA%2BOyKtAS%2BM09P%2FDtuWyUVE9KXzhZjayboXeWCt3cptnYy6sxDKE%2B5l7%2BAL%2B91CZkf%2Bp5QL1ZpaxUdqyYsiQE7Jiz20K0TkX2DeHt4PT0PtJ8LeOvyQxCAKZi%2FeSyXSgN0n0zuDNunSml35K3H0P5bM2ttTUJggTXJaldwWlSupqESdKgdigTFEV31urIBvpTJdfX%2FC4Q4Lt8ywzth8cQZQZ9nFrKWgJteIub82%2BWg1gsi4KMjLrYcGMi0wETuGJlreoOBpsa86iI%2Bhwhy2vKSGuRj%2BnQX77MvKrFXjug4x37MepPuI5eU%3D&Signature=DMWKhxH%2FS1zOjIlXMdK%2BgS%2F6q1g%3D&content-type=application%2Fx-tar 520ms
+[2021-07-11 22:43:34] Upload complete 
+POST /v1/bundles/4809112/status 390ms
+GET /v1/bundles/4809112 389ms
+[2021-07-11 22:43:35] Saving deployment record for solve_test -  
+----- Server deployment started at  2021-07-11 22:43:35  -----
+POST /v1/applications/4374945/deploy 610ms
+Waiting for task: 969702249
+GET /v1/tasks/969702249 369ms
+GET /v1/tasks/969702249 419ms
+  building: Parsing manifest
+GET /v1/tasks/969702249 419ms
+  building: Building image: 5515188
+GET /v1/tasks/969702249 409ms
+  building: Building package: flexTeaching
+GET /v1/tasks/969702249 380ms
+GET /v1/tasks/969702249 380ms
+GET /v1/tasks/969702249 370ms
+GET /v1/tasks/969702249 429ms
+GET /v1/tasks/969702249 379ms
+GET /v1/tasks/969702249 410ms
+GET /v1/tasks/969702249 389ms
+GET /v1/tasks/969702249 379ms
+GET /v1/tasks/969702249 660ms
+GET /v1/tasks/969702249 369ms
+GET /v1/tasks/969702249 409ms
+GET /v1/tasks/969702249 389ms
+GET /v1/tasks/969702249 410ms
+GET /v1/tasks/969702249 389ms
+################################ Begin Task Log ################################ 
+GET /v1/tasks/969702249/logs/ 369ms
+GET /v1/tasks/?filter=account_id:26575&filter=parent_id:969702249&count=100&offset=0 529ms
+GET /v1/tasks/969702251/logs/ 440ms
+[2021-07-11T21:43:41.505980919+0000] Installing R package: rlang (0.4.11)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜rlangâ€™ ...
+* DONE (rlang)
+[2021-07-11T21:43:41.764977840+0000] Installing R package: withr (2.4.2)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜withrâ€™ ...
+* DONE (withr)
+[2021-07-11T21:43:41.957662198+0000] Installing R package: xtable (1.8-4)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜xtableâ€™ ...
+* DONE (xtable)
+[2021-07-11T21:43:42.167440135+0000] Installing R package: magrittr (2.0.1)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜magrittrâ€™ ...
+* DONE (magrittr)
+[2021-07-11T21:43:42.367313201+0000] Installing R package: sourcetools (0.1.7)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜sourcetoolsâ€™ ...
+* DONE (sourcetools)
+[2021-07-11T21:43:42.626020189+0000] Installing R package: stringi (1.6.2)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜stringiâ€™ ...
+* DONE (stringi)
+[2021-07-11T21:43:43.032792198+0000] Installing R package: utf8 (1.2.1)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜utf8â€™ ...
+* DONE (utf8)
+[2021-07-11T21:43:43.235944181+0000] Installing R package: purrr (0.3.4)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜purrrâ€™ ...
+* DONE (purrr)
+[2021-07-11T21:43:43.443161805+0000] Installing R package: rappdirs (0.3.3)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜rappdirsâ€™ ...
+* DONE (rappdirs)
+[2021-07-11T21:43:43.620188502+0000] Installing R package: mime (0.11)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜mimeâ€™ ...
+* DONE (mime)
+[2021-07-11T21:43:43.794771737+0000] Installing R package: fansi (0.5.0)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜fansiâ€™ ...
+* DONE (fansi)
+[2021-07-11T21:43:43.994109444+0000] Installing R package: evaluate (0.14)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜evaluateâ€™ ...
+* DONE (evaluate)
+[2021-07-11T21:43:44.169743367+0000] Installing R package: base64enc (0.1-3)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜base64encâ€™ ...
+* DONE (base64enc)
+[2021-07-11T21:43:44.345434505+0000] Installing R package: fs (1.5.0)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜fsâ€™ ...
+* DONE (fs)
+[2021-07-11T21:43:44.586903191+0000] Installing R package: R6 (2.5.0)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜R6â€™ ...
+* DONE (R6)
+[2021-07-11T21:43:44.764026930+0000] Installing R package: fastmap (1.1.0)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜fastmapâ€™ ...
+* DONE (fastmap)
+[2021-07-11T21:43:44.967068513+0000] Installing R package: cachem (1.0.5)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜cachemâ€™ ...
+* DONE (cachem)
+[2021-07-11T21:43:45.142511212+0000] Installing R package: ellipsis (0.3.2)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜ellipsisâ€™ ...
+* DONE (ellipsis)
+[2021-07-11T21:43:45.318025066+0000] Installing R package: xfun (0.24)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜xfunâ€™ ...
+* DONE (xfun)
+[2021-07-11T21:43:45.515814482+0000] Installing R package: tinytex (0.32)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜tinytexâ€™ ...
+* DONE (tinytex)
+[2021-07-11T21:43:45.692939727+0000] Installing R package: highr (0.9)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜highrâ€™ ...
+* DONE (highr)
+[2021-07-11T21:43:45.870684636+0000] Installing R package: generics (0.1.0)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜genericsâ€™ ...
+* DONE (generics)
+[2021-07-11T21:43:46.044711908+0000] Installing R package: yaml (2.2.1)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜yamlâ€™ ...
+* DONE (yaml)
+[2021-07-11T21:43:46.251207975+0000] Installing R package: commonmark (1.7)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜commonmarkâ€™ ...
+* DONE (commonmark)
+[2021-07-11T21:43:46.476338680+0000] Installing R package: pkgconfig (2.0.3)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜pkgconfigâ€™ ...
+* DONE (pkgconfig)
+[2021-07-11T21:43:46.648935522+0000] Installing R package: digest (0.6.27)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜digestâ€™ ...
+* DONE (digest)
+[2021-07-11T21:43:46.866979621+0000] Installing R package: htmltools (0.5.1.1)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜htmltoolsâ€™ ...
+* DONE (htmltools)
+[2021-07-11T21:43:47.049392847+0000] Installing R package: sass (0.4.0)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜sassâ€™ ...
+* DONE (sass)
+[2021-07-11T21:43:47.420855226+0000] Installing R package: jquerylib (0.1.4)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜jquerylibâ€™ ...
+* DONE (jquerylib)
+[2021-07-11T21:43:47.652755729+0000] Installing R package: glue (1.4.2)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜glueâ€™ ...
+* DONE (glue)
+[2021-07-11T21:43:47.844190533+0000] Installing R package: cli (3.0.0)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜cliâ€™ ...
+* DONE (cli)
+[2021-07-11T21:43:48.062076623+0000] Installing R package: vctrs (0.3.8)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜vctrsâ€™ ...
+* DONE (vctrs)
+[2021-07-11T21:43:48.365324479+0000] Installing R package: tidyselect (1.1.1)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜tidyselectâ€™ ...
+* DONE (tidyselect)
+[2021-07-11T21:43:48.559889427+0000] Installing R package: stringr (1.4.0)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜stringrâ€™ ...
+* DONE (stringr)
+[2021-07-11T21:43:48.759022497+0000] Installing R package: lifecycle (1.0.0)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜lifecycleâ€™ ...
+* DONE (lifecycle)
+[2021-07-11T21:43:48.955748873+0000] Installing R package: jsonlite (1.7.2)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜jsonliteâ€™ ...
+* DONE (jsonlite)
+[2021-07-11T21:43:49.168034825+0000] Installing R package: htmlwidgets (1.5.3)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜htmlwidgetsâ€™ ...
+* DONE (htmlwidgets)
+[2021-07-11T21:43:49.367703373+0000] Installing R package: Rcpp (1.0.7)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜Rcppâ€™ ...
+* DONE (Rcpp)
+[2021-07-11T21:43:50.388807180+0000] Installing R package: later (1.2.0)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜laterâ€™ ...
+* DONE (later)
+[2021-07-11T21:43:50.685568459+0000] Installing R package: bslib (0.2.5.1)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜bslibâ€™ ...
+* DONE (bslib)
+[2021-07-11T21:43:51.312471024+0000] Installing R package: crayon (1.4.1)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜crayonâ€™ ...
+* DONE (crayon)
+[2021-07-11T21:43:51.488136655+0000] Installing R package: pillar (1.6.1)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜pillarâ€™ ...
+* DONE (pillar)
+[2021-07-11T21:43:51.744034055+0000] Installing R package: tibble (3.1.2)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜tibbleâ€™ ...
+* DONE (tibble)
+[2021-07-11T21:43:51.993959573+0000] Installing R package: dplyr (1.0.7)
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *binary* package â€˜dplyrâ€™ ...
+* DONE (dplyr)
+[2021-07-11T21:43:52.261648488+0000] Building R package: flexTeaching (0.1)
+/mnt/packages/build /mnt
+# Bootstrapping renv 0.13.2 --------------------------------------------------
+* Downloading renv 0.13.2 ... OK (downloaded source)
+* Installing renv 0.13.2 ... Done!
+* Successfully installed and loaded renv 0.13.2.
+Error: .onLoad failed in loadNamespace() for 'pillar', details:
+  call: loadNamespace(x)
+  error: there is no package called â€˜crayonâ€™
+Execution halted
+Warning in untar2(tarfile, files, list, exdir, restore_times) :
+  skipping pax global extended headers
+* installing to library â€˜/opt/R/4.1.0/lib/R/libraryâ€™
+* installing *source* package â€˜flexTeachingâ€™ ...
+** using non-staged installation via StagedInstall field
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+ERROR: lazy loading failed for package â€˜flexTeachingâ€™
+* removing â€˜/opt/R/4.1.0/lib/R/library/flexTeachingâ€™
+GET /v1/tasks/?filter=account_id:26575&filter=parent_id:969702251&count=100&offset=0 419ms
+################################# End Task Log ################################# 
+Error: Unhandled Exception: Child Task 969702251 failed: Error building image: Error building flexTeaching (0.1). Build exited with non-zero status: 1
+----- Deployment error -----
+Error: Unhandled Exception: Child Task 969702251 failed: Error building image: Error building flexTeaching (0.1). Build exited with non-zero status: 1
+ 
+----- Error stack trace -----
+Error during wrapup: length(max.lines) <= 1 is not TRUE
+Error: no more error handlers available (recursive errors?); invoking 'abort' restart
