@@ -1,4 +1,4 @@
-shinyapps_username = 'richarddmorey'
+shinyapps_username = 'Artur9013'
 
 renv::restore(prompt = FALSE)
 
